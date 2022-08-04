@@ -2,27 +2,37 @@
   padding: 4.8rem 3.2rem;
   display: flex;
   flex-direction: column;
+
   @include size(tablet) {
     flex-direction: row;
   }
+
   &__header {
     margin-bottom: 3.8rem;
+
     @include size(tablet) {
       margin-bottom: 0;
       margin-right: 6.5rem;
     }
+    @include size(desktop) {
+      margin-right: 14rem;
+    }
   }
+
   &__text {
     margin-bottom: 3.8rem;
     max-width: 31.1rem;
+
     @include size(tablet) {
       margin-bottom: 0;
       margin-right: 1rem;
       max-width: 28.1rem;
     }
   }
+
   &__icons {
     display: flex;
+
     @include size(tablet) {
       margin-left: auto;
     }
@@ -34,9 +44,11 @@
       }
     }
   }
+
   &--black {
     background-color: $color-black;
   }
+
   &--brown {
     background-color: $color-brown;
   }
