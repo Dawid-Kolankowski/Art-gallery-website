@@ -2,19 +2,30 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Big Shoulders Display", cursive;
-}
-
-h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 6rem;
-  line-height: 5.5rem;
-}
-
-h4 {
+  font-family: $font-secondary;
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: $font-primary;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.font--secondary {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.font--white {
+  color: $color-white;
+}
+
+.font--black {
+  color: $color-black;
 }

@@ -1,0 +1,11 @@
+@mixin size($size) {
+  @if $size == tablet {
+    @media (min-width: $mobile-width) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: $tablet-width) {
+      @content;
+    }
+  }
+}

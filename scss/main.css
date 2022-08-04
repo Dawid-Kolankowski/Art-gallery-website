@@ -11,6 +11,85 @@ html {
   padding: 0;
 }
 
-* {
-  font-family: "Rubik", sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.font--secondary {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.font--white {
+  color: #ffffff;
+}
+
+.font--black {
+  color: #151515;
+}
+
+.footer {
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+.footer__header {
+  margin-bottom: 3.8rem;
+}
+@media (min-width: 480px) {
+  .footer__header {
+    margin-bottom: 0;
+    margin-right: 6.5rem;
+  }
+}
+.footer__text {
+  margin-bottom: 3.8rem;
+  max-width: 31.1rem;
+}
+@media (min-width: 480px) {
+  .footer__text {
+    margin-bottom: 0;
+    margin-right: 1rem;
+    max-width: 28.1rem;
+  }
+}
+.footer__icons {
+  display: flex;
+}
+@media (min-width: 480px) {
+  .footer__icons {
+    margin-left: auto;
+  }
+}
+.footer__icons_icon {
+  margin-left: 2rem;
+}
+.footer__icons_icon:first-child {
+  margin-left: 0;
+}
+.footer--black {
+  background-color: #151515;
+}
+.footer--brown {
+  background-color: #d5966c;
 }/*# sourceMappingURL=main.css.map */
