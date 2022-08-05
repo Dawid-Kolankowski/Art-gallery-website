@@ -3,7 +3,7 @@
   grid: "img-1" "text-1" "img-2" "img-3" "text-2";
   gap: 1.6rem;
   max-width: 34.3rem;
-  margin: 7.5rem auto;
+  margin: 12rem auto;
 
   @include size(tablet) {
     grid:
@@ -15,6 +15,7 @@
   }
   @include size(desktop) {
     max-width: 111rem;
+    margin: 18rem auto;
   }
 
   .img-1 {

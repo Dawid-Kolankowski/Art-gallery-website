@@ -14,3 +14,36 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.button {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  text-decoration: none;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+  p {
+    background-color: $color-black;
+    padding: 2.4rem 3.5rem;
+    color: $color-white;
+  }
+
+  span {
+    background-color: $color-brown;
+    height: 100%;
+    padding: 2.4rem;
+  }
+
+  &--inverted {
+    span {
+      transform: rotate(180deg);
+      order: -1;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include size(desktop) {
+    flex-direction: row;
+  }
+  &__img img {
+    width: 100%;
+    margin-bottom: 3.2rem;
+    @include size(tablet) {
+      width: auto;
+      margin: 0;
+    }
+  }
+  &__blackbox {
+    display: none;
+    height: 80rem;
+    width: 31.25%;
+
+    background-color: $color-black;
+    mix-blend-mode: overlay;
+
+    @include size(desktop) {
+      display: block;
+      z-index: 1;
+    }
+  }
+  &__content {
+    max-width: 34.3rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-black;
+
+    h1 {
+      color: $color-white;
+      mix-blend-mode: difference;
+    }
+    @include size(tablet) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin-left: 38.8rem;
+    }
+
+    @include size(desktop) {
+      flex-direction: row;
+      max-width: 111rem;
+      margin: 0;
+      right: 0;
+      margin-top: 19rem;
+      margin-inline: auto;
+      justify-content: space-between;
+    }
+
+    &_text {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      margin: 3.2rem 0;
+
+      @include size(tablet) {
+        margin: 4.8rem 0;
+      }
+      @include size(desktop) {
+        max-width: 35rem;
+        margin: 0;
+        margin-bottom: 6.4rem;
+      }
+    }
+  }
+}
