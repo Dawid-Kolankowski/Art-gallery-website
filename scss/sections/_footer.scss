@@ -51,5 +51,9 @@
 
   &--brown {
     background-color: $color-brown;
+    color: $color-black;
+    path {
+      fill: $color-black;
+    }
   }
 }
