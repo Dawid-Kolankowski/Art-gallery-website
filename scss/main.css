@@ -284,9 +284,11 @@ h4 {
   justify-content: center;
   color: #151515;
 }
-.hero__content h1 {
-  color: #ffffff;
-  mix-blend-mode: difference;
+@media (min-width: 1120px) {
+  .hero__content h1 {
+    color: #ffffff;
+    mix-blend-mode: difference;
+  }
 }
 @media (min-width: 768px) {
   .hero__content {

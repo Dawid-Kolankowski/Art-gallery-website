@@ -36,8 +36,10 @@
     color: $color-black;
 
     h1 {
-      color: $color-white;
-      mix-blend-mode: difference;
+      @include size(desktop) {
+        color: $color-white;
+        mix-blend-mode: difference;
+      }
     }
     @include size(tablet) {
       position: absolute;
