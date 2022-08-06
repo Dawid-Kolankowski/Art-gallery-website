@@ -20,11 +20,9 @@
     width: 31.25%;
 
     background-color: $color-black;
-    mix-blend-mode: overlay;
 
     @include size(desktop) {
       display: block;
-      z-index: 1;
     }
   }
   &__content {
